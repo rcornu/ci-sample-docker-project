@@ -1,0 +1,10 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Build started
+      - docker build .
+      - echo Build ended
+    finally:
+      - echo This always runs even if the install command fails
